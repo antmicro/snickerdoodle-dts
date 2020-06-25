@@ -42,3 +42,12 @@
 &wlcore {
 	compatible = "wlcore", "ti,wl1837";
 };
+
+&amba {
+	hdmi {
+		compatible = "hdmi-fastvdma";
+		reg = <0x43C00000 0x1000 0x43C10000 0x1000 0x43C20000 0x1000>;
+		interrupts = <0 30 4>;
+		status = "okay";
+	};
+};
